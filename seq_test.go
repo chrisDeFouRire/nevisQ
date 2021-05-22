@@ -13,12 +13,12 @@ func TestCountSubSequences(t *testing.T) {
 		args args
 		want int
 	}{
-		{"test0", args{3, 1}, 3},
-		{"test00", args{3, 3}, 1},
-		{"test1", args{4, 2}, 6},
-		{"test2", args{4, 1}, 4},
-		{"test3", args{4, 3}, 4},
-		{"test4", args{4, 4}, 1},
+		{"test31", args{3, 1}, 3},
+		{"test33", args{3, 3}, 1},
+		{"test42", args{4, 2}, 6},
+		{"test41", args{4, 1}, 4},
+		{"test43", args{4, 3}, 4},
+		{"test44", args{4, 4}, 1},
 		{"test52", args{5, 2}, 10},
 		{"test53", args{5, 3}, 10},
 		{"test54", args{5, 4}, 5},

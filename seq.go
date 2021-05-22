@@ -9,8 +9,8 @@ func CountSubSequences(m, n int) int {
 
 	sum := 0
 	// otherwise it's the sum of the count of subsequences for each starting position of the subsequence
-	for c := n - 1; c < m; c++ {
-		sum += CountSubSequences(c, n-1)
+	for c := 1; c <= m-n+1; c++ {
+		sum += CountSubSequences(m-c, n-1)
 	}
 	return sum
 }
